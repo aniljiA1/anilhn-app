@@ -2,6 +2,10 @@
 
 A full-stack Hacker News scraper and reader built with MongoDB, Express, React, and Node.js.
 
+## Live
+
+Deploy: https://anilhn-app.vercel.app/
+
 ## Features
 
 - **Web Scraper** — Scrapes top 10 stories from Hacker News on server start and via API
@@ -78,7 +82,7 @@ hn-app/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/aniljiA1/anilhn-app.git
 cd hn-app
 ```
 
@@ -87,14 +91,14 @@ cd hn-app
 ```bash
 cd backend
 npm install
-cp .env.example .env
+cp .env
 ```
 
 Edit `.env` with your values:
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/hn-scraper
+MONGODB_URI=mongodb+srv://aniljiA1:anil12345@cluster0.za9amvj.mongodb.net/?appName=Cluster0
 JWT_SECRET=your_super_secret_jwt_key_change_this
 JWT_EXPIRES_IN=7d
 ```
@@ -116,13 +120,14 @@ The server will:
 ```bash
 cd frontend
 npm install
-cp .env.example .env
+cp .env
 ```
 
 Edit `.env`:
 
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=http://localhost:5004/api
+
 ```
 
 Start the frontend:
@@ -131,7 +136,7 @@ Start the frontend:
 npm start
 ```
 
-The app opens at `http://localhost:3000`
+The app opens at `http://localhost:3004`
 
 ## API Reference
 
@@ -189,20 +194,23 @@ The app opens at `http://localhost:3000`
 
 ### Backend (Render)
 
-1. Create a new Web Service on [Render](https://render.com)
-2. Set root directory to `backend`
-3. Build command: `npm install`
-4. Start command: `node server.js`
-5. Add environment variables in Render dashboard
+Deploy: https://anilhn-app.onrender.com/api/health
 
 ### Frontend (Vercel)
 
-1. Create a new project on [Vercel](https://vercel.com)
-2. Set root directory to `frontend`
-3. Add `REACT_APP_API_URL` pointing to your Render backend URL
+Deploy: https://anilhn-app.vercel.app
 
 ### Database (MongoDB Atlas)
 
 1. Create a free cluster on [MongoDB Atlas](https://www.mongodb.com/atlas)
 2. Get the connection string
 3. Set as `MONGODB_URI` in backend env vars
+
+
+----
+
+## Author
+**Anil Kumar**
+
+
+   
